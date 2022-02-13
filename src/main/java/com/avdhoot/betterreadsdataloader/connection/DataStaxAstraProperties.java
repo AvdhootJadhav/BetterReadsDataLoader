@@ -1,4 +1,4 @@
-package connection;
+package com.avdhoot.betterreadsdataloader.connection;
 
 import java.io.File;
 
