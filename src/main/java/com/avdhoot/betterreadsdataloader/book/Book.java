@@ -17,7 +17,7 @@ public class Book {
     @Id @PrimaryKeyColumn(name = "book_id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
     private String id;
 
-    @Column("author_name")
+    @Column("book_name")
     @CassandraType(type = Name.TEXT)
     private String name;
 
@@ -96,5 +96,7 @@ public class Book {
     public void setAuthorId(List<String> authorId) {
         this.authorId = authorId;
     }
+
+    
 
 }

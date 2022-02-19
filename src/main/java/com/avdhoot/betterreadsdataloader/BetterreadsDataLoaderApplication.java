@@ -89,7 +89,7 @@ public class BetterreadsDataLoaderApplication {
 						book.setDescription(descriptionObject.optString("value"));
 					}
 					book.setName(jsonObject.optString("title"));
-
+					System.out.println(book.getName());
 					JSONArray authorsArray = jsonObject.optJSONArray("authors");
 
 					if (authorsArray != null) {
@@ -136,7 +136,7 @@ public class BetterreadsDataLoaderApplication {
 
 	@PostConstruct
 	public void start() {
-		initAuthors();
+		//initAuthors();
 		initWorks();
 	}
 
